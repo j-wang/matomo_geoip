@@ -2,6 +2,14 @@
 
 Bitnami Matomo Docker image with GeoIP PECL preinstalled. Includes Dockerfile for building the custom Docker image, and the docker-compose file for spinning up a self-contained docker swarm.
 
+## More Info
+
+Assumes that the Matomo directory is mounted at /bitnami/matomo since this instance uses the bitnami/matomo docker image as a base.
+
+The GeoIP PECL is preinstalled and initialized in php.ini. Still requires the GeoIPCity.dat or whatever database is being used to actually be downloaded into the Matomo install directory.
+
+Docker image exists on Docker Hub [here](https://hub.docker.com/r/jameswang10/matomo_geoip/).
+
 # Troubleshooting, Contributing
 
 For any troubleshooting or contributions, please reference the base bitnami repo [here](https://github.com/bitnami/bitnami-docker-matomo).
